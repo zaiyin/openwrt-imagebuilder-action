@@ -27,7 +27,7 @@ jobs:
       - uses: izer-xyz/openwrt-imagebuilder-action@main
         with:
           image: x86-64
-          profile: Generic
+          profile: generic
           openwrt-version: 23.05.1
           packages: >-
             -firewall4 -ca-bundle -dnsmasq -dropbear   
