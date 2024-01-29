@@ -52,7 +52,7 @@ jobs:
          docker run --rm \
            -v $(pwd)/bin:/openwrt \
            tianon/qemu \
-             qemu-system-arm \
+             qemu-system-x86 \
                -M virt-2.9 \
                -kernel /openwrt/zImage \
                -no-reboot -nographic \
