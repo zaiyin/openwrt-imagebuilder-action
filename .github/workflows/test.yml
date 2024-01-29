@@ -23,13 +23,6 @@ jobs:
     steps:
       
       - uses: actions/checkout@v3
-
-      - uses: robinraju/release-downloader@v1.8
-        with:
-          repository: "izer-xyz/librespot-openwrt"
-          latest: true
-          fileName: "*.ipk"
-          out-file-path: "packages"
        
       - uses: izer-xyz/openwrt-imagebuilder-action@main
         with:
