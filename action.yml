@@ -7,7 +7,7 @@ inputs:
   image: 
     description: 'Specifies the imagebuilder tag'
     required: true
-    default: 'bcm27xx-bcm2711'
+    default: 'x86-64'
   profile:
     description: 'Specifies the target image to build - PROFILE'
     required: false
