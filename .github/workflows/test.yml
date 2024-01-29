@@ -33,9 +33,9 @@ jobs:
        
       - uses: izer-xyz/openwrt-imagebuilder-action@main
         with:
-          image: armvirt-32
+          image: x86-64
           profile: Default
-          openwrt-version: 22.03.5
+          openwrt-version: 23.05.1
           packages: >-
             -firewall4 -ca-bundle -dnsmasq -dropbear   
             -kmod-nft-offload -libustream-wolfssl -logd  
@@ -49,7 +49,7 @@ jobs:
       - name: Store packages
         uses: actions/upload-artifact@v3
         with:
-          name: armvirt-32
+          name: x86-64
           path: bin/*
           
       - run: |
